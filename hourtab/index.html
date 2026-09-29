@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HourTab — Help and Support</title>
+<meta name="description" content="HourTab is a weekly time card for people paid by the hour: hours, breaks, overtime and estimated pay, kept on your phone. Help, FAQ and contact.">
+<style>
+:root{color-scheme:light dark;--bg:#FAF4E8;--surface:#FFFDF8;--kraft:#F2E8D5;--border:#E2D4BA;--text:#2B2118;--muted:#5B4A3B;--ink:#2B55A0;--ink-soft:#DDE6F5;--ink-text:#213F78}
+@media (prefers-color-scheme:dark){:root{--bg:#1E1915;--surface:#29221C;--kraft:#332A22;--border:#4A3E33;--text:#F5ECDF;--muted:#D6C6B1;--ink:#9DB8F0;--ink-soft:#26324A;--ink-text:#C9D8F7}}
+*{box-sizing:border-box;margin:0}
+body{font-family:'Albert Sans',-apple-system,'Segoe UI',Roboto,sans-serif;font-size:17px;line-height:1.6;background:var(--bg);color:var(--text);padding:0 0 64px}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+header{padding:48px 0 24px;text-align:center}
+header svg{width:72px;height:72px;border-radius:18px}
+h1,h2{font-family:'Bricolage Grotesque','Albert Sans',-apple-system,'Segoe UI',Roboto,sans-serif;line-height:1.25}
+h1{font-size:32px;margin:14px 0 6px}
+.tag{color:var(--muted);font-size:17px}
+.badges{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:16px}
+.badge{background:var(--ink-soft);color:var(--ink-text);border-radius:999px;padding:5px 14px;font-size:14px;font-weight:600}
+h2{font-size:21px;margin:34px 0 10px}
+h2::before{content:"";display:block;width:44px;height:6px;border-radius:6px 6px 0 0;background:var(--ink);margin-bottom:8px}
+p+p{margin-top:10px}
+ol,ul{padding-left:24px}
+li{margin:8px 0}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:14px 18px;margin:12px 0}
+.q{font-weight:700;margin-bottom:4px}
+a{color:var(--ink)}
+.es{background:var(--kraft)}
+.note{color:var(--muted);font-size:15px}
+footer{margin-top:44px;color:var(--muted);font-size:15px;text-align:center}
+</style>
+</head>
+<body><div class="wrap">
+
+<header>
+<svg viewBox="0 0 1024 1024" role="img" aria-label="HourTab icon"><rect width="1024" height="1024" fill="#BF8A4C"/><rect x="212" y="214" width="258" height="138" rx="42" fill="#2B55A0"/><rect x="212" y="300" width="600" height="500" rx="60" fill="#FFFFFF"/><path d="M512 556 L512 372 M512 556 L672 556" stroke="#2B55A0" stroke-width="46" stroke-linecap="round" fill="none"/><circle cx="512" cy="556" r="42" fill="#2B55A0"/></svg>
+<h1>HourTab</h1>
+<p class="tag">A weekly time card for people paid by the hour</p>
+<div class="badges"><span class="badge">No account</span><span class="badge">No ads</span><span class="badge">Your hours stay on your phone</span><span class="badge">English · Español</span></div>
+</header>
+
+<p>HourTab adds up your week the way your paycheck should: In, Out and unpaid break for each day, a total in hours and minutes (8:30) and in decimal hours (8.50), regular hours, overtime and your estimated gross pay. It is your own record to check your pay — not your employer's time clock.</p>
+
+<h2>How to use HourTab</h2>
+<ol>
+<li>Type your In and Out times in the week card — <b>830</b> means 8:30 — and tap AM or PM under the day. Every change saves as you type.</li>
+<li>Or tap <b>Clock in</b> when you start and <b>Clock out</b> when you finish. Breaks you start with <b>Start break</b> are not counted as work.</li>
+<li>Your total, regular hours, overtime and estimated gross pay add up at the bottom of the week.</li>
+<li>Every week stays in <b>History</b>. Tap a week to open it and fix it.</li>
+<li>Export any week as a PDF or CSV timesheet, and keep a backup copy from <b>Settings → Backups and restore</b>.</li>
+</ol>
+
+<h2>FAQ</h2>
+<div class="card"><p class="q">Does it sync or back up to the cloud?</p><p>No, on purpose: there is no account and your hours stay on your phone. To keep a copy off the phone, pick a backup folder or save a backup file in Settings → Backups and restore.</p></div>
+<div class="card"><p class="q">How is overtime counted?</p><p>Weekly overtime after 40 hours by default. Daily overtime and double time can be turned on in your job settings, where you also set the limits and the multipliers. Hours already counted as daily overtime don't count again toward the weekly 40.</p></div>
+<div class="card"><p class="q">My shift goes past midnight.</p><p>Just type the times. HourTab shows "+1" and counts the whole shift on the day it started.</p></div>
+<div class="card"><p class="q">AM or PM came out wrong.</p><p>Tap AM or PM under the day you are typing in. HourTab learns your usual In and Out times for each job, so next time it guesses right. 12-hour shifts like 7a–7:30p are understood.</p></div>
+<div class="card"><p class="q">Can I save my usual shift?</p><p>Yes, automatically: after you work the same shift twice, it shows up as a "Usual shifts" chip on an empty day. One tap fills it.</p></div>
+<div class="card"><p class="q">I got a raise.</p><p>Change the hourly pay in your job settings and pick the week it starts. Earlier weeks keep the old pay.</p></div>
+<div class="card"><p class="q">I changed jobs.</p><p>Job settings → <b>I changed jobs</b>. Your old job is archived and its hours stay in History and exports.</p></div>
+<div class="card"><p class="q">Can my employer see my hours?</p><p>No. Nobody sees your hours unless you share a PDF or CSV yourself.</p></div>
+<div class="card"><p class="q">How do I move to a new phone?</p><p>Settings → Backups and restore → <b>Save a backup copy</b>. On the new phone, install HourTab and use <b>Restore from a file</b>.</p></div>
+<div class="card"><p class="q">How do I restore a purchase?</p><p>HourTab is free to use. If you ever buy the optional Pro upgrade, you can restore it from Settings → Your plan → Restore purchase, using the same Google account.</p></div>
+<div class="card"><p class="q">How do I delete everything?</p><p>Settings → <b>Delete all my data</b>, or email us. Full steps are in the <a href="./privacy.html#delete">privacy policy</a>.</p></div>
+<div class="card"><p class="q">Is this payroll, tax or legal advice?</p><p>No. HourTab gives estimates to help you check your pay. Overtime rules vary by state and employer.</p></div>
+
+<h2>Contact</h2>
+<div class="card"><p>Questions, problems or ideas: <a href="mailto:cmorehollman@gmail.com?subject=HourTab">cmorehollman@gmail.com</a> — TechInnova Solutions LLC.</p>
+<p class="note">Please don't email your timesheets or backup files: we don't need your hours to help you.</p></div>
+
+<h2 lang="es">En español</h2>
+<div class="card es" lang="es">
+<p>HourTab es una tarjeta de horas semanal para quien cobra por hora: entrada, salida y descanso de cada día, total en horas y minutos y en decimales, horas extra y pago bruto estimado. Se guarda mientras escribes, sin cuenta y sin anuncios, y tus horas se quedan en tu teléfono. Para cambiar el idioma: Ajustes → Idioma. Para pasar a un teléfono nuevo: Ajustes → Copias y restaurar → <b>Guardar una copia</b>, y en el teléfono nuevo, <b>Restaurar desde un archivo</b>. Para borrar todo: Ajustes → Borrar todos mis datos. Dudas: <a href="mailto:cmorehollman@gmail.com?subject=HourTab">cmorehollman@gmail.com</a>.</p>
+</div>
+
+<footer><a href="./privacy.html">Privacy policy</a></footer>
+</div></body>
+</html>
