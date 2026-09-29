@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tipjot — Support</title>
+<style>
+  :root { color-scheme: light dark; --bg: #FAF7F5; --card: #FFFFFF; --text: #221A26; --muted: #5D5163; --line: #E3D9DE; --accent: #C2325A; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #15111A; --card: #1E1824; --text: #F1ECF4; --muted: #B9AEC2; --line: #3A3043; --accent: #FF6B8B; }
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body { font-family: -apple-system, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; background: var(--bg); color: var(--text); padding: 0 0 60px; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 48px 0 24px; text-align: center; }
+  h1 { font-size: 34px; margin: 8px 0 6px; }
+  .tag { color: var(--muted); font-size: 18px; }
+  .badges { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 14px; }
+  .badge { background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; font-size: 13px; color: var(--muted); }
+  h2 { font-size: 21px; margin: 32px 0 10px; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+  p { margin: 10px 0; }
+  ol, ul { padding-left: 24px; }
+  li { margin: 8px 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; margin: 12px 0; }
+  .q { font-weight: 700; margin-top: 0; }
+  a { color: var(--accent); }
+  footer { margin-top: 44px; color: var(--muted); font-size: 14px; text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Tipjot</h1>
+  <p class="tag">A simple tip log for servers and bartenders</p>
+  <div class="badges"><span class="badge">No account</span><span class="badge">Works offline</span><span class="badge">No ads</span></div>
+</header>
+
+<p>Tipjot keeps your cash tips, card tips, tip-out and hours for every shift, shows what you make per hour, and
+prints a clean tip record. Everything is stored on your phone. This page explains how it works and how to reach us.</p>
+
+<h2>Log a shift</h2>
+<ol>
+  <li>The first time you open Tipjot, add your first job (for example "Server") with its hourly wage (it can be 0),
+  your pay period and the day your week starts.</li>
+  <li>On Home, tap <strong>Log shift</strong>. Pick the job, the date (before 5 AM a new shift is dated yesterday, and
+  the form says so), and the hours: tap 4, 5, 6, 7, 8 or 10 h, type them (6.5 or 6:30), or use clock in and clock out.
+  Overnight shifts stay on the day they started.</li>
+  <li>Type your cash tips, card tips and tip-out, then tap <strong>Save shift</strong>. Net tips = cash + card −
+  tip-out.</li>
+  <li>Also on the form, optional: the amount you reported to your employer, and — once you type a tip-out — who you
+  tipped out. Under "More details": sales (for your tip % of sales), the hourly wage for that shift, and a note.</li>
+  <li>Tap any shift in Home or History to edit it. Deleted one by mistake? Tap <strong>Undo</strong> right away.</li>
+</ol>
+
+<h2>Pay periods, jobs and reports</h2>
+<ul>
+  <li><strong>Pay period:</strong> weekly, every 2 weeks (pick the day your current pay period started), twice a month
+  or monthly — in Settings › Pay period. History groups your shifts by pay period.</li>
+  <li><strong>Several jobs:</strong> Settings › Jobs › Add job. Each job has its own default wage and color. A job with
+  shifts can be archived (it stays in your history and reports); a job with no shifts can be deleted.</li>
+  <li><strong>Reports:</strong> this week, this pay period, this month, last month, this year, last year or any dates
+  you choose. With two or more jobs you can look at one job at a time.</li>
+</ul>
+
+<h2>Tip record (PDF), CSV and backups</h2>
+<ul>
+  <li><strong>Tip record (PDF):</strong> Reports › pick a range (and a job, if you like) › <strong>Tip record
+  (PDF)</strong>. Your phone's share sheet opens: print it, save it to Files or send it.</li>
+  <li><strong>CSV:</strong> Reports › <strong>Export CSV</strong>. It opens in Numbers, Excel or Google Sheets.</li>
+  <li><strong>Backup file:</strong> Settings › Your data › <strong>Save a backup file</strong>. Keep the file somewhere
+  safe, like Files or your email, then tap <strong>Yes, saved</strong>. Each file has the day it was made in its name
+  (for example Tipjot-backup-2026-09-28.json). Tipjot reminds you after 30 new shifts without a saved backup.</li>
+</ul>
+
+<h2>Questions</h2>
+<div class="card">
+  <p class="q">How do I move my tips to a new phone?</p>
+  <p>On the old phone: Settings › <strong>Save a backup file</strong>, and keep the file. On the new phone: install
+  Tipjot and tap <strong>Moving from another phone? Restore a backup file</strong> on the first screen (or Settings ›
+  <strong>Restore from a backup file</strong> later) and pick the file — the newest one, by the date in its name.
+  Before anything is replaced, Tipjot shows how many shifts are on the phone and warns you if the file is older; if
+  the phone had shifts, you can tap <strong>Undo restore</strong> right after. If you bought the one-time unlock, tap
+  <strong>Restore purchase</strong> in Settings too.</p>
+  <p>On iPhone, your phone's own backup (iCloud or a computer) may also include Tipjot's data. On Android, Tipjot is
+  not included in the device backup, so the backup file is the way to move.</p>
+</div>
+<div class="card">
+  <p class="q">Does Tipjot cost anything?</p>
+  <p>The download is free, with no ads and no account. If your version of Tipjot shows a free trial, the trial lasts 7
+  days; after it, logging <em>new</em> shifts takes a one-time purchase — no subscription. Your history, editing,
+  reports, PDF and CSV exports and backups stay free whether you buy or not. If your version shows no trial, every
+  feature is included.</p>
+</div>
+<div class="card">
+  <p class="q">I bought the unlock and reinstalled the app. How do I get it back?</p>
+  <p>Settings › <strong>Restore purchase</strong>. The purchase belongs to your App Store or Google Play account, so you
+  are not charged again.</p>
+</div>
+<div class="card">
+  <p class="q">What does "Reported" mean in my totals?</p>
+  <p>It is the amount you entered as reported to your employer for a shift. Totals add it up only for the shifts where
+  you entered one, and say how many shifts that is (for example "22 of 43 shifts").</p>
+</div>
+<div class="card">
+  <p class="q">Does Tipjot tell me how much to report or pay in taxes?</p>
+  <p>No. Tipjot is a personal record-keeping app. All amounts are entered by you. It does not give tax, legal or
+  financial advice. Tipjot is not affiliated with the IRS or any employer.</p>
+</div>
+<div class="card">
+  <p class="q">How do I delete everything?</p>
+  <p>Settings › Your data › <strong>Delete all my data</strong> (it asks twice), or uninstall the app. Save a backup
+  file first if you want a copy.</p>
+</div>
+
+<h2>Contact</h2>
+<div class="card">
+  <p>Questions, problems or ideas: <a href="mailto:cmorehollman@gmail.com?subject=Tipjot">cmorehollman@gmail.com</a>.
+  Please tell us your phone model and what you tapped. Tipjot is made by TechInnova Solutions LLC.</p>
+</div>
+
+<footer>
+  <a href="./privacy.html">Privacy Policy</a>
+</footer>
+</div>
+</body>
+</html>
