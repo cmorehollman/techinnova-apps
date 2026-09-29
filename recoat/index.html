@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Recoat — Support</title>
+<meta name="description" content="Recoat: try paint colors on a photo of your house or your room, on your phone. Help, questions and contact.">
+<style>
+:root{color-scheme:light dark;--bg:#FAF6EF;--surface:#FFFDF9;--alt:#F1EBE1;--border:#E0D6C8;--text:#2A2521;--muted:#5C534B;--accent:#6B4530;--wet:#E8764B}
+@media (prefers-color-scheme:dark){:root{--bg:#1D1A17;--surface:#27231F;--alt:#312C27;--border:#463F38;--text:#F4EFE8;--muted:#CFC6BB;--accent:#E0BC9E;--wet:#F08A62}}
+*{box-sizing:border-box;margin:0}
+body{font-family:Manrope,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:17px;line-height:1.6;background:var(--bg);color:var(--text);padding:0 0 64px}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header{padding:44px 0 22px;text-align:center}
+header svg{width:84px;height:84px;border-radius:20px}
+h1,h2{font-family:Literata,Georgia,'Times New Roman',serif;line-height:1.25;overflow-wrap:anywhere}
+h1{font-size:36px;margin:14px 0 6px}
+.swatches{display:flex;gap:8px;justify-content:center;margin:12px 0 10px}
+.swatches span{width:22px;height:32px;border-radius:5px;display:block;box-shadow:inset 0 0 0 1px rgba(140,130,120,.45)}
+.tag{color:var(--muted);font-size:18px}
+.badges{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:14px}
+.badge{background:var(--alt);border-radius:999px;padding:6px 14px;font-size:14px;color:var(--text)}
+h2{font-size:21px;margin:34px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+ol,ul{padding-left:24px}
+li{margin:8px 0}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:16px 18px;margin:12px 0}
+.q{font-weight:700}
+.es{background:var(--alt)}
+a{color:var(--accent);text-underline-offset:2px}
+footer{margin-top:44px;color:var(--muted);font-size:15px;text-align:center}
+</style>
+</head>
+<body><div class="wrap">
+
+<header>
+<svg viewBox="0 0 1000 1000" role="img" aria-label="Recoat icon"><rect width="1000" height="1000" fill="#4A3022"/><g transform="translate(180 178) scale(0.64)"><path d="M500 110 L930 470 L840 470 L840 900 L160 900 L160 470 L70 470 Z" fill="#FFFFFF"/><path d="M612 470 Q626 524 612 577 Q598 631 612 685 Q626 739 612 792 Q598 846 612 900 L840 900 L840 470 Z" fill="#F08A62"/></g></svg>
+<h1>Recoat</h1>
+<div class="swatches" aria-hidden="true"><span style="background:#A9B8A0"></span><span style="background:#3F5A73"></span><span style="background:#B8653F"></span><span style="background:#F1E9DA;border:1px solid #C9BFB1"></span><span style="background:#2B2A28"></span></div>
+<p class="tag">Try paint colors on a photo of your house or your room</p>
+<div class="badges"><span class="badge">No account</span><span class="badge">No ads</span><span class="badge">English + Español</span><span class="badge">Your photos stay on your phone</span></div>
+</header>
+
+<p>Take or choose a photo, tap a wall and try colors on it. Add trim, door and shutters, mark what should stay as it is (windows, brick, the roof), and save the picture with a color card to take to the paint store. No photo yet? Start with the sample house or the sample room in the app.</p>
+
+<h2>How to use Recoat</h2>
+<ol>
+<li><b>Choose a photo</b> — your house from the street, or a room. The whole wall in the picture works well.</li>
+<li><b>Tap the wall.</b> Smart tap paints the wall you touch and stops at its edges.</li>
+<li><b>Fix the edges.</b> Move Edge sensitivity, or use lasso, polygon, brush and eraser. Pinch to zoom in.</li>
+<li><b>Add trim and door.</b> Tap "+ Surface" for trim, door or shutters. Add Keep as is over windows, brick or the roof so they never get painted.</li>
+<li><b>Save and take it to the store.</b> Save the image with its color card. The hex code and LRV help you compare real paint samples.</li>
+</ol>
+
+<h2>Tips for better photos</h2>
+<ul>
+<li>Even daylight works well. Cloudy days are great.</li>
+<li>Avoid hard shadows across the wall.</li>
+<li>Stand in front of the wall, not at an angle, and get the whole wall in the photo.</li>
+<li>In rooms, turn on all the lights.</li>
+<li>On brick, busy textures or white trim on a white wall, outline the wall with the polygon tool.</li>
+</ul>
+
+<h2>Questions people ask</h2>
+<div class="card"><p class="q">Does it sync?</p><p>No, on purpose. Your photos and projects stay on this phone. Use Settings → Back up everything to move them to a new phone, then Settings → Restore from backup there.</p></div>
+<div class="card"><p class="q">How do I stop it from painting my windows or door?</p><p>Add Keep as is and tap or draw over them. Smart tap never paints there. It's free.</p></div>
+<div class="card"><p class="q">It painted too much (or too little). What do I do?</p><p>Tap Undo, lower (or raise) Edge sensitivity and tap again. For the last details use lasso, polygon, brush or eraser. If a spot already belongs to another surface, Recoat tells you and offers to paint it as the surface you're working on.</p></div>
+<div class="card"><p class="q">Are these real paint brand colors?</p><p>No. Recoat shows any color you pick by hex code. It is not matched to any paint brand. Always test a real sample. In My colors you can write the name or code from your paint sample.</p></div>
+<div class="card"><p class="q">Why does my wall look different from the sample?</p><p>Screens, cameras and light change colors. Use the photo only to compare ideas.</p></div>
+<div class="card"><p class="q">What is LRV?</p><p>Light reflectance value: how much light a color reflects, from 0 (black) to 100 (white). Recoat estimates it from the screen color; paint makers measure it on real paint.</p></div>
+<div class="card"><p class="q">Where are my saved images?</p><p>In the folder you picked the first time you tapped Save to phone. If you picked Pictures, they also show up in your gallery. You can change the folder on the Save &amp; share screen.</p></div>
+<div class="card"><p class="q">How do I delete everything?</p><p>Settings → Delete all my data. It removes every project, photo and saved color from this phone. See the <a href="./privacy.html#delete">Privacy Policy</a> for full steps.</p></div>
+
+<h2>Support</h2>
+<div class="card"><p>Questions, problems or ideas: <a href="mailto:cmorehollman@gmail.com?subject=Recoat%20support">cmorehollman@gmail.com</a>. Tell us your phone model and what you tapped, and a screenshot helps.</p></div>
+
+<h2 lang="es">En español</h2>
+<div class="card es" lang="es"><p>Recoat te deja probar colores de pintura sobre una foto de tu casa o de un cuarto: toca la pared, elige un color, marca con Dejar igual lo que no se pinta (ventanas, ladrillo, tejado) y guarda la imagen con su tarjeta de colores. No se sincroniza a propósito: todo queda en tu teléfono (usa Ajustes → Respaldar todo para pasarlo a otro). Los colores no están igualados a ninguna marca: prueba siempre una muestra real. Para borrar todo: Ajustes → Borrar todos mis datos. Ayuda: <a href="mailto:cmorehollman@gmail.com?subject=Recoat%20soporte">cmorehollman@gmail.com</a>.</p></div>
+
+<footer><a href="./privacy.html">Privacy Policy</a> · TechInnova Solutions LLC</footer>
+</div></body>
+</html>
